@@ -31,22 +31,22 @@ export default function DocsOverviewView() {
         <div className="space-y-4 mb-8">
           <Link
             href="/docs/installation"
-            className="group block rounded-lg border border-gray-200/90 bg-white p-5 hover:border-gray-300 hover:shadow-xs transition-all"
+            className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-blue-400 hover:shadow-sm transition-all"
           >
             <div className="flex items-start gap-3.5">
               <div className="text-blue-600 mt-0.5">
                 <ArrowIntroIcon className="w-5 h-5" />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-semibold text-gray-900 hover:text-blue-600 transition-colors">
                   Getting Started
                 </h3>
-                <p className="mt-1 text-xs sm:text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-500">
                   Quickstart guides, prerequisites, and initial project configuration.
                 </p>
-                <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-blue-600">
+                <div className="mt-3 flex items-center gap-1.5 text-xs font-medium text-blue-600">
                   <span>Start reading</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                  <span>→</span>
                 </div>
               </div>
             </div>
@@ -54,22 +54,22 @@ export default function DocsOverviewView() {
 
           <Link
             href="/docs/routing"
-            className="group block rounded-lg border border-gray-200/90 bg-white p-5 hover:border-gray-300 hover:shadow-xs transition-all"
+            className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-blue-400 hover:shadow-sm transition-all"
           >
             <div className="flex items-start gap-3.5">
               <div className="text-blue-600 mt-0.5">
                 <BranchIcon className="w-5 h-5" />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-semibold text-gray-900 hover:text-blue-600 transition-colors">
                   Core Concepts
                 </h3>
-                <p className="mt-1 text-xs sm:text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-500">
                   Deep dive into nested routing patterns, catch-all paths, and data loading.
                 </p>
-                <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-blue-600">
+                <div className="mt-3 flex items-center gap-1.5 text-xs font-medium text-blue-600">
                   <span>Explore concepts</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                  <span>→</span>
                 </div>
               </div>
             </div>
@@ -77,22 +77,22 @@ export default function DocsOverviewView() {
 
           <Link
             href="/docs/configuration"
-            className="group block rounded-lg border border-gray-200/90 bg-white p-5 hover:border-gray-300 hover:shadow-xs transition-all"
+            className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-blue-400 hover:shadow-sm transition-all"
           >
             <div className="flex items-start gap-3.5">
               <div className="text-blue-600 mt-0.5">
                 <GearIcon className="w-5 h-5" />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-semibold text-gray-900 hover:text-blue-600 transition-colors">
                   Reference
                 </h3>
-                <p className="mt-1 text-xs sm:text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-500">
                   Detailed configuration parameters, flags, and CLI commands.
                 </p>
-                <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-blue-600">
+                <div className="mt-3 flex items-center gap-1.5 text-xs font-medium text-blue-600">
                   <span>View reference</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                  <span>→</span>
                 </div>
               </div>
             </div>
