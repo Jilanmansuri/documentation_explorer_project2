@@ -29,19 +29,15 @@ export default function CodeBlock({
   };
 
   return (
-    <div className="my-4 rounded-lg overflow-hidden border border-gray-800 bg-[#0c121e] text-gray-200 text-xs shadow-sm">
+    <div className="my-4 rounded border border-gray-800 bg-slate-900 text-gray-100 text-xs">
       {(filename || rightBadge || showCopy) && (
-        <div className="flex items-center justify-between px-4 py-2.5 bg-[#090d16] border-b border-gray-800/80 text-[11px] font-mono text-gray-400">
+        <div className="flex items-center justify-between px-4 py-2 bg-slate-950 border-b border-gray-800 text-xs font-mono text-gray-400">
           <div className="flex items-center gap-2">
-            {filename?.startsWith("●") ? (
-              <span className="text-gray-400">{filename}</span>
-            ) : (
-              <span className="text-gray-300">{filename}</span>
-            )}
+            <span>{filename}</span>
           </div>
           <div className="flex items-center gap-3">
             {rightBadge && (
-              <span className="text-[10px] tracking-wider font-semibold text-gray-400 uppercase">
+              <span className="text-[11px] font-semibold text-gray-400">
                 {rightBadge}
               </span>
             )}
@@ -49,12 +45,12 @@ export default function CodeBlock({
               <button
                 type="button"
                 onClick={handleCopy}
-                className="flex items-center gap-1.5 text-gray-400 hover:text-white transition-colors cursor-pointer"
+                className="flex items-center gap-1.5 text-gray-400 hover:text-white transition-colors"
               >
                 {copied ? (
                   <>
-                    <CheckIcon className="w-3.5 h-3.5 text-emerald-400" />
-                    <span className="text-emerald-400">Copied!</span>
+                    <CheckIcon className="w-3.5 h-3.5 text-green-400" />
+                    <span className="text-green-400 text-xs">Copied!</span>
                   </>
                 ) : (
                   <>
@@ -67,7 +63,7 @@ export default function CodeBlock({
           </div>
         </div>
       )}
-      <pre className="p-4 overflow-x-auto font-mono leading-relaxed text-[13px] text-gray-200">
+      <pre className="p-4 overflow-x-auto font-mono text-xs leading-relaxed text-gray-200">
         <code>{code}</code>
       </pre>
     </div>
